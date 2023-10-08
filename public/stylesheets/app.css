@@ -8,7 +8,13 @@
  * Student ID: 301257092
  * Date: 08-Oct-2023
  */
- footer {
+:root {
+  --bs-primary-rgb: 11, 80, 127;
+  --bs-link-color: #3755b6;
+  --bs-link-hover-color: #2d4697;
+}
+
+footer {
   width: 100%;
   margin-bottom: 10px;
   text-align: center;
