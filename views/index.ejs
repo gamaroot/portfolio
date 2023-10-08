@@ -1,0 +1,245 @@
+<!--
+    Centennial College
+    Game Programming - COMP229 / Section 004
+
+    Assignment 1 - Portfolio Site using Express JS
+
+    Author: Carlos da Gama Rocha
+    Student ID: 301257092
+    Date: 08-Oct-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head'); %>
+    </head>
+    <body id="page-top">
+      <header>
+        <%- include('./partials/header'); %>
+      </header>
+            <!-- Page Content-->
+            <div class="container-fluid p-0">
+                <% if (title == "Home") { %>
+                        <section class="resume-section" id="about">
+                            <div class="resume-section-content">
+                                <h1 class="mb-0">
+                                    Carlos
+                                    <span class="text-primary">Gama</span>
+                                </h1>
+                                <div class="subheading mb-5">
+                                    Bayview Village, Toronto, ON - Canada · (905) 781-5391 ·
+                                    <a href="gamaroot@gmail.com">gamaroot@gmail.com</a>
+                                    ·
+                                    <a href="https://www.linkedin.com/in/carlosgama0057">linkedin.com/carlosgama0057</a>
+                                </div>
+                                <p class="lead mb-5">Software Developer since 2010, 5 years in Android development and almost 9 years in Game development.</p>
+                            </div>
+                        </section>
+
+                <% } else if (title == "Experience") { %>
+                        <section class="resume-section" id="experience">
+                            <div class="resume-section-content">
+                                <h2 class="mb-5">Experience</h2>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Lead Software Engineer (2015 - Present)</h3>
+                                        <div class="subheading mb-3">Gazeus Games, Montreal - Canada</div>
+                                        
+                                        <h5>Leading &amp; Management</h5>
+                                        <ul>
+                                        <li>Leading and managing a team of Android and iOS developers, where we create native solutions for the games;</li>
+                                        <li>Working close to Game Product Owners, QA, BI, Ad Monetization and Backend;</li>
+                                        <li>Mentoring Software Engineers in a remote workspace by peer to peer coding and code review through merge requests.</li>
+                                        </ul>
+                                        
+                                        <h5>AutoBuilder (JavaFX + Bash Shell Scripting)</h5>
+                                        <ul>
+                                        <li>Tool for Windows/MacOS that generates Android/iOS apps through a Javascript game project;</li>
+                                        <li>Run all process locally our through CI server;</li>
+                                        <li>Firebase App Distribution integration, auto generating Release Notes.</li>
+                                        </ul>
+                                        
+                                        <h5>Buraco Jogatina - Android/iOS (Unity) - <a href="https://play.google.com/store/apps/details?id=com.jogatina.buraco&hl=en">Google Play Store</a></h5>
+                                        <ul>
+                                        <li>Migrated from AndEngine to Unity;</li>
+                                        <li>Singleplayer: Core gameplay and bots are made in Lua;</li>
+                                        <li>Multiplayer: SmartFox Server running the same core in Lua;</li>
+                                        <li>Fully automated builds for Android and iOS with Gitlab CI/CD;</li>
+                                        <li>Chat & Emoji (animations made through Spine);</li>
+                                        <li>Ads, Analytics, Push, Local Notifications and Debug Mode tools.</li>
+                                        </ul>
+                                        
+                                        <h5>Android Native Libraries</h5>
+                                        <ul>
+                                        <li>Billing: InApp purchase (consumable & non-consumable) and Subscription;</li>
+                                        <li>Animation: Similar to DOTween from Unity but for Android native games;</li>
+                                        <li>Social: Play with friends by inviting them through a deferred deep linking or via a socket service;</li>
+                                        <li>Ads: Operates multiple ad networks;</li>
+                                        <li>Analytics: Operates multiple analytics tools;</li>
+                                        <li>Many other small tools.</li>
+                                        </ul>
+                                        
+                                        <h5>Simple games made from scratch</h5>
+                                        <ul>
+                                        <li>Canasta Turbo - Android (Unity) - <a href="https://play.google.com/store/apps/details?id=com.jogatina.canasta.turbo">Google Play Store</a></li>
+                                        <li>Sueca Jogatina - Android (AndEngine) - <a href="https://play.google.com/store/apps/details?id=com.riva.sueca&hl=en">Google Play Store</a></li>
+                                        <li>Many other small games.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Mobile Game Developer - Partner (2018-2020)</h3>
+                                        <div class="subheading mb-3">CarnaBlocos, Rio de Janeiro - Brazil</div>
+                                        <h5>Run To Win - Android/iOS (Unity)</h5>
+                                        <ul>
+                                            <li>2D Infinite Runner game based on seasonal Brazilian events;</li>
+                                            <li>GameSparks platform for login and global ranking;</li>
+                                            <li>Spine for the character animations;</li>
+                                            <li>Monetization through Google AdMob, IronSource and InGame Custom Ad partnership with UOL Ads.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">System Developer (2015 – 2015)</h3>
+                                        <div class="subheading mb-3">Brazilian Navy, Rio de Janeiro - Brazil</div>
+                                        <p>Developed an ESB software by using tools such as Karaf (OSGi like) and ServiceMix - Java.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Mobile Game Developer (2012 – 2013)</h3>
+                                        <div class="subheading mb-3">Oktagon Games, Rio de Janeiro - Brazil</div>
+                                        <h5>Armies and Ants - Android/iOS (Unity 3D) - <a href="https://www.youtube.com/watch?v=fPCar9dCsCs">Youtube Trailer</a></h5>
+                                        <ul>
+                                        <li>Worked on a chat system using SmartFox.</li>
+                                        </ul>
+                                        <h5>Viral Collapse - Android (ngCore - JavaScript) - <a href="https://www.youtube.com/watch?v=WJ-SueFHOjg">Youtube Trailer</a></h5>
+                                        <ul>
+                                        <li>Developed some powerups, daily bonus with a spin machine, and fixed legacy bugs.</li>
+                                        </ul>                                
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Android Developer (2012 – 2012)</h3>
+                                        <div class="subheading mb-3">True Systems, Rio de Janeiro - Brazil</div>
+                                        <p>Worked on migration of Windows Phone apps to Android: PWAP / OnFlux App.</p>                              
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Android Developer Intern (2011 – 2012)</h3>
+                                        <div class="subheading mb-3">Declink, Rio de Janeiro - Brazil</div>
+                                        <p>Worked on migration of the Management System of Traffic Infractions in Rio de Janeiro from Palm OS to Android.</p>                              
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">System Analyst Intern (2010 – 2011)</h3>
+                                        <div class="subheading mb-3">Stefanini LATAM, Rio de Janeiro - Brazil</div>
+                                        <p>Developed functional prototypes using .NET C#.</p>                              
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                <% } else if (title == "Volunteer") { %>
+                    <section class="resume-section" id="experience">
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Volunteer Experience</h2>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Brazilian Air Force (2008)</h3>
+                                    <div class="subheading mb-3">Carandaí, Minas Gerais - Brazil</div>
+                                    <p>Humanitarian aid to the homeless in the disaster (S.O.S. Carandaí - <a href="https://www.flyertalk.com/forum/travel-photography/2102315-welcome-trekearth-users.html">Gallery Link</a>).</p>                              
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                <% } else if (title == "Education") { %>
+                    <section class="resume-section" id="education">
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Education</h2>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Centennial College - Canada</h3>
+                                    <div class="subheading mb-3">Advanced Diploma</div>
+                                    <div>Game Programming (2022-2025)</div>
+                                    <p>GPA: 4.357 of 4.5 (96.82%)</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Infnet Institute - Brazil</h3>
+                                    <div class="subheading mb-3">Bachelor's degree</div>
+                                    <div>Computer Engineering (2010-2015)</div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Infnet Institute - Brazil</h3>
+                                    <div class="subheading mb-3">Certificate</div>
+                                    <div>3D Character Designer (2012-2013)</div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Brazilian Air Force</h3>
+                                    <div class="subheading mb-3">Air Cadets Preparatory School (2007-2009)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                <% } else if (title == "Skills") { %>
+                    <section class="resume-section" id="skills">
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Skills</h2>
+                            <div class="subheading mb-3">Programming Languages & Tools</div>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+                                <li class="list-inline-item"><i"><small>C#</small></i></li>
+                                <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-apple"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-android"></i></li>
+                            </ul>
+                            <div class="subheading mb-3">Workflow</div>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Effective Communication
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Continuous Improvement
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Cross Functional Teams
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Agile Development & Scrum
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <% } else { %>
+                    <section class="resume-section" id="interests">
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Interests</h2>
+                            <p>In addition to my profession as a game developer, my personal time reflects a passion for gaming. When at home, I enjoy immersing myself in RPG video games and expanding my culinary skills by watching informative culinary videos.</p>
+                            <p class="mb-0">Beyond the digital realm, I find joy in discovering new locations across Canada, appreciating the country's diverse natural beauty. It's a delightful contrast to my technology-oriented pursuits. During my leisure hours, I diligently keep up with the latest technological advancements in the game development industry. This continuous exploration allows me to stay at the forefront of innovation and bring fresh and exciting ideas to my work.</p>
+                        </div>
+                    </section>
+                <% } %>
+        </div>
+    </body>
+    <footer>
+        <%- include('./partials/footer'); %>
+    </footer>
+</html>
