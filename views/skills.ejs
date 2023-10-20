@@ -1,0 +1,66 @@
+<!--
+    Centennial College
+    Game Programming - COMP229 / Section 004
+
+    Assignment 2 - Portfolio Site using Express JS
+
+    Author: Carlos da Gama Rocha
+    Student ID: 301257092
+    Date: 20-Oct-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body id="page-top">
+    
+    <!-- Navigation-->
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+                    <li class="list-inline-item"><i"><small>C#</small></i></li>
+                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-apple"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-android"></i></li>
+                </ul>
+                <div class="subheading mb-3">Workflow</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Effective Communication
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Continuous Improvement
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Cross Functional Teams
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Agile Development & Scrum
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</html>

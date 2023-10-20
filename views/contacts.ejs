@@ -1,0 +1,59 @@
+<!--
+    Centennial College
+    Game Programming - COMP229 / Section 004
+
+    Assignment 2 - Portfolio Site using Express JS
+
+    Author: Carlos da Gama Rocha
+    Student ID: 301257092
+    Date: 20-Oct-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body id="page-top">
+    
+    <!-- Navigation-->
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="contacts">
+
+            <% if (contacts.length == 0) { %>
+                <a href="mailto:gamaroot@gmail.com" style="width: 100%;text-align: center;">Your list is empty, please contact the admin.</a>
+            <% } else { %>
+                <table class="table table-striped table-hover">
+                    <!-- Header Row -->
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th colspan="3">Email</th>
+                    </tr>
+
+                    <% for (let index = 0; index < contacts.length; index++) { %>
+                        <tr>
+                            <td><%= contacts[index].name %></td>
+                            <td><%= contacts[index].number %></td>
+                            <td><%= contacts[index].email %></td>
+                            <td><a href="/contacts/edit/<%= contacts[index]._id %>" class="btn btn-warning">Update</a></td>
+                            <td><a href="/contacts/delete/<%= contacts[index]._id %>" class="btn btn-danger">Delete</a></td>
+                        </tr>
+                    <% } %>
+                </table>
+            <% } %>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</html>

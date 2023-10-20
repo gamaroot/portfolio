@@ -1,0 +1,152 @@
+<!--
+    Centennial College
+    Game Programming - COMP229 / Section 004
+
+    Assignment 2 - Portfolio Site using Express JS
+
+    Author: Carlos da Gama Rocha
+    Student ID: 301257092
+    Date: 20-Oct-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body id="page-top">
+    
+    <!-- Navigation-->
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Lead Software Engineer (2015 - Present)</h3>
+                        <div class="subheading mb-3">Gazeus Games, Montreal - Canada</div>
+
+                        <h5>Leading &amp; Management</h5>
+                        <ul>
+                            <li>Leading and managing a team of Android and iOS developers, where we create native solutions for the games;</li>
+                            <li>Working close to Game Product Owners, QA, BI, Ad Monetization and Backend;</li>
+                            <li>Mentoring Software Engineers in a remote workspace by peer to peer coding and code review through merge requests.</li>
+                        </ul>
+
+                        <h5>AutoBuilder (JavaFX + Bash Shell Scripting)</h5>
+                        <ul>
+                            <li>Tool for Windows/MacOS that generates Android/iOS apps through a Javascript game project;</li>
+                            <li>Run all process locally our through CI server;</li>
+                            <li>Firebase App Distribution integration, auto generating Release Notes.</li>
+                        </ul>
+
+                        <h5>Buraco Jogatina - Android/iOS (Unity) - 
+                            <a href="https://play.google.com/store/apps/details?id=com.jogatina.buraco&hl=en">Google Play Store</a>
+                        </h5>
+                        <ul>
+                            <li>Migrated from AndEngine to Unity;</li>
+                            <li>Singleplayer: Core gameplay and bots are made in Lua;</li>
+                            <li>Multiplayer: SmartFox Server running the same core in Lua;</li>
+                            <li>Fully automated builds for Android and iOS with Gitlab CI/CD;</li>
+                            <li>Chat & Emoji (animations made through Spine);</li>
+                            <li>Ads, Analytics, Push, Local Notifications and Debug Mode tools.</li>
+                        </ul>
+
+                        <h5>Android Native Libraries</h5>
+                        <ul>
+                            <li>Billing: InApp purchase (consumable & non-consumable) and Subscription;</li>
+                            <li>Animation: Similar to DOTween from Unity but for Android native games;</li>
+                            <li>Social: Play with friends by inviting them through a deferred deep linking or via a socket service;</li>
+                            <li>Ads: Operates multiple ad networks;</li>
+                            <li>Analytics: Operates multiple analytics tools;</li>
+                            <li>Many other small tools.</li>
+                        </ul>
+
+                        <h5>Simple games made from scratch</h5>
+                        <ul>
+                            <li>Canasta Turbo - Android (Unity) - 
+                                <a href="https://play.google.com/store/apps/details?id=com.jogatina.canasta.turbo">Google Play Store</a>
+                            </li>
+                            <li>Sueca Jogatina - Android (AndEngine) - 
+                                <a href="https://play.google.com/store/apps/details?id=com.riva.sueca&hl=en">Google Play Store</a>
+                            </li>
+                            <li>Many other small games.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Mobile Game Developer - Partner (2018-2020)</h3>
+                        <div class="subheading mb-3">CarnaBlocos, Rio de Janeiro - Brazil</div>
+                        <h5>Run To Win - Android/iOS (Unity)</h5>
+                        <ul>
+                            <li>2D Infinite Runner game based on seasonal Brazilian events;</li>
+                            <li>GameSparks platform for login and global ranking;</li>
+                            <li>Spine for the character animations;</li>
+                            <li>Monetization through Google AdMob, IronSource and InGame Custom Ad partnership with UOL Ads.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">System Developer (2015 – 2015)</h3>
+                        <div class="subheading mb-3">Brazilian Navy, Rio de Janeiro - Brazil</div>
+                        <p>Developed an ESB software by using tools such as Karaf (OSGi like) and ServiceMix - Java.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Mobile Game Developer (2012 – 2013)</h3>
+                        <div class="subheading mb-3">Oktagon Games, Rio de Janeiro - Brazil</div>
+                        <h5>Armies and Ants - Android/iOS (Unity 3D) - 
+                            <a href="https://www.youtube.com/watch?v=fPCar9dCsCs">Youtube Trailer</a>
+                        </h5>
+                        <ul>
+                            <li>Worked on a chat system using SmartFox.</li>
+                        </ul>
+                        <h5>Viral Collapse - Android (ngCore - JavaScript) - 
+                            <a href="https://www.youtube.com/watch?v=WJ-SueFHOjg">Youtube Trailer</a>
+                        </h5>
+                        <ul>
+                            <li>Developed some powerups, daily bonus with a spin machine, and fixed legacy bugs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Android Developer (2012 – 2012)</h3>
+                        <div class="subheading mb-3">True Systems, Rio de Janeiro - Brazil</div>
+                        <p>Worked on migration of Windows Phone apps to Android: PWAP / OnFlux App.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Android Developer Intern (2011 – 2012)</h3>
+                        <div class="subheading mb-3">Declink, Rio de Janeiro - Brazil</div>
+                        <p>Worked on migration of the Management System of Traffic Infractions in Rio de Janeiro
+                            from Palm OS to Android.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">System Analyst Intern (2010 – 2011)</h3>
+                        <div class="subheading mb-3">Stefanini LATAM, Rio de Janeiro - Brazil</div>
+                        <p>Developed functional prototypes using .NET C#.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</html>

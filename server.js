@@ -3,19 +3,19 @@
  * Centennial College
  * Game Programming - COMP229 / Section 004
  * 
- * Assignment 1 - Portfolio Site using Express JS
+ * Assignment 2 - Portfolio Site using Express JS
  * 
  * Author: Carlos da Gama Rocha
  * Student ID: 301257092
- * Date: 08-Oct-2023
+ * Date: 20-Oct-2023
  */
 
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('assignment1:server');
+var app = require('./config/app');
+var debug = require('debug')('portfolio:server');
 var http = require('http');
 
 /**

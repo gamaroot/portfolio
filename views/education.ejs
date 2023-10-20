@@ -1,0 +1,67 @@
+<!--
+    Centennial College
+    Game Programming - COMP229 / Section 004
+
+    Assignment 2 - Portfolio Site using Express JS
+
+    Author: Carlos da Gama Rocha
+    Student ID: 301257092
+    Date: 20-Oct-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body id="page-top">
+    
+    <!-- Navigation-->
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Centennial College - Canada</h3>
+                        <div class="subheading mb-3">Advanced Diploma</div>
+                        <div>Game Programming (2022-2025)</div>
+                        <p>GPA: 4.357 of 4.5 (96.82%)</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Infnet Institute - Brazil</h3>
+                        <div class="subheading mb-3">Bachelor's degree</div>
+                        <div>Computer Engineering (2010-2015)</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Infnet Institute - Brazil</h3>
+                        <div class="subheading mb-3">Certificate</div>
+                        <div>3D Character Designer (2012-2013)</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Brazilian Air Force</h3>
+                        <div class="subheading mb-3">Air Cadets Preparatory School (2007-2009)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</html>
